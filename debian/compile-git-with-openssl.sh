@@ -30,7 +30,7 @@ mkdir -p "${BUILDDIR}"
 cd "${BUILDDIR}"
 
 if [ -z ${TARBALL+x} ]; then
-	 Download the source tarball from Github
+	# Download the source tarball from Github
 	sudo apt update
 	sudo apt install curl -y
 	git_tarball_url="https://www.github.com$(curl 'https://github.com/git/git/tags' | grep -o "/git/git/archive/v2\..*\.tar\.gz" | sort -r | head -1 | tr -d '\n')"
