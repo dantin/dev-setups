@@ -41,6 +41,8 @@ fi
 tar -zxf "vim-source.tar.gz" --strip 1
 
 # Source dependencies
+sudo apt update
+sudo apt upgrade -y
 sudo apt install libncurses5-dev -y
 sudo apt install libgtk2.0-dev libatk1.0-dev libcairo2-dev -y
 sudo apt install libx11-dev libxt-dev libxpm-dev -y
